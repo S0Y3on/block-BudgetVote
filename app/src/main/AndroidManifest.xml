@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.capstone">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Login_Register"></activity>
+        <activity android:name=".Upload_Budget"></activity>
+        <activity android:name=".Upload_Execution"></activity>
+        <activity android:name=".Check_Execution"></activity>
+        <activity android:name=".Check_Execution_Vote_Result"></activity>
+        <activity android:name=".Check_Execution_Vote"></activity>
+        <activity android:name=".Upload_Vote"></activity>
+        <activity android:name=".Upload_Vote_Select_Time"></activity>
+        <activity android:name=".Upload_Vote_Select_Execution"></activity>
+        <activity android:name=".Menu_Supervisor"></activity>
+        <activity android:name=".Menu_NormalStudent"></activity>
+        <activity android:name=".Menu_StudentCouncil"></activity>
+        <activity android:name=".View_Last_Budget"></activity>
+        <activity android:name=".View_Now_Budget"></activity>
+        <activity android:name=".View_Vote"></activity>
+        <activity android:name=".View_Execution"></activity>
+        <activity android:name=".View_Voting"></activity>
+        <activity android:name=".View_Vote_Result"></activity>
+        <activity android:name=".View_detail"></activity>
+        <activity android:name=".Login_Start">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+
+</manifest>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Upload_Execution">
+
+    <Button
+        android:id="@+id/commitExecution"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="24dp"
+        android:text="업로드"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/execution_note" />
+
+    <TextView
+        android:id="@+id/upload_vote_textView"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:background="#3F877F7F"
+        android:text="[집행내역 업로드]"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toStartOf="@+id/commitExecution"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/upload_execution_back"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:text="돌아가기"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/upload_vote_textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_budget_result"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:text="날짜"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/execution_date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upload_vote_textView" />
+
+    <EditText
+        android:id="@+id/execution_note"
+        android:layout_width="280dp"
+        android:layout_height="120dp"
+        android:ems="10"
+        android:hint="세부 지출 내용 or 기타 사항"
+        android:inputType="textMultiLine"
+        app:layout_constraintStart_toStartOf="@+id/execution_expenditure"
+        app:layout_constraintTop_toTopOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:text="수입"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/textView_execution_result"
+        app:layout_constraintTop_toBottomOf="@+id/textView_execution_result" />
+
+    <EditText
+        android:id="@+id/execution_date"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:ems="10"
+        android:hint="0000년 00월 00일"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_budget_result"
+        app:layout_constraintStart_toEndOf="@+id/textView_budget_result" />
+
+    <EditText
+        android:id="@+id/execution_contents"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="신입생 환영회"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_execution_result"
+        app:layout_constraintStart_toStartOf="@+id/execution_date" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:text="지출"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/execution_income"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="기존 0,000원 / 인당 0,000 X n명"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="@+id/execution_contents" />
+
+    <EditText
+        android:id="@+id/execution_expenditure"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="0,000원"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="@+id/execution_income" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:text="비고"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView_execution_result"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:text="내용"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/textView_budget_result"
+        app:layout_constraintTop_toBottomOf="@+id/textView_budget_result" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
